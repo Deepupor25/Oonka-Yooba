@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oonka Yooba</title>
+    <style>
+        body{
+            background-color: rgb(56, 105, 7);
+        }
+        #numb{
+            display: block;
+            /* justify-content: center; */
+            margin-left: 400px;
+            background-color: darkkhaki;
+            text-align: center;
+            width: 450px;
+            height: 500px;
+            line-height: 150px;
+            border-radius: 20px;
+        }
+        #butt{
+            display: flex;
+            justify-content: space-around;
+            /* background-color: aquamarine; */
+        }
+        #butt button{
+            padding: 5px;
+            color: rgb(7, 14, 1);
+            background-color: rgb(212, 231, 193);
+            border: none;
+            border-radius: 10px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="numb">
+        <h1>Oonka Yooba</h1>
+        <h1 id="score" style="font-size: xx-large;"></h1>
+        <div id="butt">
+            <button onclick="add()"><h4>Afikun</h4></button>
+            <button onclick="minus()"><h4>Ayokuro</h4></button>
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+    let fig = 0
+    let ans = document.getElementById('score')
+    ans.innerHTML = fig
+    
+
+    function add(){
+        ++fig
+        ans.innerHTML = fig
+
+    }
+    function minus(){
+        --fig
+        ans.innerHTML = fig
+    }
+</script>
+</html>
